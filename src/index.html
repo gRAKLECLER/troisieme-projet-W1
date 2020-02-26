@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/a2cd0917f3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/script.js"></script>
+    <script defer src="../src/js/home.js"></script>
+    <link rel="icon" href="./assets/logo.png" title="Perfected">
+    <link rel="stylesheet" href="../src/scss/styles/styles.scss" />
+    <title>Perfected - Un perfecto aussi unique que vous</title>
+  </head>
+  <body>
+    <header>
+      <section class='navbar'>
+        <div class='navbar__desktop'>
+          <div class='elements navbar__element'>
+            <div class='logo'>
+              <div class='logo__grpahism'>
+                <img class='logo__navbar' src='./assets/logo.png'>
+              </div>
+              <div class='logo__name'>
+                Perfected
+              </div>
+            </div>
+            <div class='navbar__txt'>
+              <div class='navbar__menu navbar__element--text'><a href="#custom">personnalisation</a></div>
+              <div class='navbar__menu navbar__element--text'><a href="#fabrics">nos tissus</a></div>
+              <div class='navbar__menu navbar__element--text'><a href="#artist">notre artiste</a></div>
+              <div class='navbar__menu navbar__element--text'><a href="#values">nos valeurs</a></div>
+            </div>
+            <div class='navbar__logo--shopping'>
+              <img src='./assets/shopping-bag.svg' class='shopping__bag--logo'>
+            </div>
+        </div>
+      </div>
+      <div class='navbar__mobile'>
+        <div class='element__mobile'>
+          <p class='navbar__mobile--text'>Perso</p>
+          <a href="#custom"><img src='./assets/perso.svg'></a>
+        </div>
+        <div class='element__mobile'>
+          <p class='navbar__mobile--text'>Artiste</p>
+          <a href="#artist">
+          <img src='./assets/artist.svg'></a>
+        </div>
+        <div class='element__mobile'>
+          <p class='navbar__mobile--text'>Tissus</p>
+          <a href="#fabrics"><img src='./assets/tissus.svg'></a>
+        </div>
+        <div class='element__mobile'>
+          <p class='navbar__mobile--text'>Valeurs</p>
+          <a href="#values"><img src='./assets/valeurs.svg'></a>
+        </div>
+        <div class='element__mobile'>
+          <p class='navbar__mobile--text'>Panier</p>
+          <a href="#basket"><img src='./assets/shopping-bag.svg' class='shopping__bag--mobile'></a>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <img class="hero__logo" src="./assets/logo.png" alt="logo perfected" />
+      <div class="hero__text">
+        <h1>Imaginez un perfecto aussi unique que vous</h1>
+        <h3>
+          Des perfectos originaux avec un impact positif à chaque étape de la
+          production.
+        </h3>
+        <a href="./screens/custom_page.html">
+          <button class="cta" id="btn">
+            Inventez le votre<span id="btn__span" class="btn__span"></span>
+          </button>
+        </a>
+      </div>
+      <p class="hero__background--text">Perfected</p>
+      <p class="hero__scroll--indication">
+        <a href="#cards">En savoir plus</a>
+        <a href="#cards"><img
+          class="hero__arrow--scroll"
+          src="./assets/arrowDown.png"
+          alt="arrow scroll"
+        />
+      </p></a>
+    </section>
+    <section class="cards" id="cards">
+      <div class="cards__card">
+        <img
+          src="../src/assets/couturiere.jfif"
+          alt="couturière"
+          class="cards__img cards__img--left"
+        />
+        <div class="cards__content">
+          <h3 class="cards__title">PERSONNALISATION</h3>
+          <ul class="p-card cards__description">
+            <li>- La coupe</li>
+            <li>- La couleur</li>
+            <li>- Les poches</li>
+            <li>- La sérigraphie</li>
+          </ul>
+          <a href="#custom">
+            <button class="cta cards__button" id="btn">
+              EN SAVOIR PLUS<span id="btn__span" class="btn__span"></span>
+            </button>
+            <img class="knowMore" src="./assets/add.svg" alt="know more" />
+          </a>
+        </div>
+      </div>
+      <div class="cards__card">
+        <div class="cards__content">
+          <h3 class="cards__title">NOS TISSUS</h3>
+          <ul class="p-card cards__description">
+            <li>- Le cuir d’eucalyptus</li>
+            <li>- La laine de chanvre</li>
+            <li>- Le lyocell</li>
+          </ul>
+          <a href="#fabrics">
+            <button class="cta cards__button" id="btn">
+              EN SAVOIR PLUS<span id="btn__span" class="btn__span"></span>
+            </button>
+            <img class="knowMore" src="./assets/add.svg" alt="know more" />
+          </a>
+        </div>
+        <img
+          class="cards__img cards__img--right"
+          src="../src/assets/leather.jfif"
+          alt="leather"
+        />
+      </div>
+      <div class="cards__card">
+        <img
+          class="cards__img cards__img--left" id="effect"
+          src="../src/assets/artist.jpg"
+          alt="peinture
+        mural"
+        />
+        
+        <div class="cards__content">
+          <h3 class="cards__title">ARTISTE</h3>
+          <p class="p-card cards__description">
+            Perfected s’associe avec un artiste pour une collaboration inédite
+            melant la mode et l’art.
+          </p>
+          <a href="#artist">
+            <button class="cta cards__button" id="btn">
+              EN SAVOIR PLUS<span id="btn__span" class="btn__span"></span>
+            </button>
+            <img class="knowMore" src="./assets/add.svg" alt="know more" />
+          </a>
+        </div>
+      </div>
+      <div class="cards__card">
+        <div class="cards__content">
+          <h3 class="cards__title">NOS VALEURS</h3>
+          <ul class="p-card cards__description">
+            <li>- 100% made in france</li>
+            <li>- Livraison éco-responsable</li>
+            <li>- Notre engagement associatif</li>
+          </ul>
+          <a href="#values">
+            <button class="cta cards__button" id="btn">
+              EN SAVOIR PLUS<span id="btn__span" class="btn__span"></span>
+            </button>
+            <img class="knowMore" src="./assets/add.svg" alt="know more" />
+          </a>
+        </div>
+        <img
+          class="cards__img cards__img--right"
+          src="../src/assets/plant.jfif"
+          alt="leaf"
+        />
+      </div>
+    </section>
+    <section class="custom" id="custom">
+      <h2>Créez votre Perfecto</h2>
+      <div class="animations__customisation">
+        <img src="./assets/animJacketWoman.gif" alt="woman jacket" />
+        <img
+          class="jacket__man"
+          src="./assets/animJacketMan.gif"
+          alt="man jacket"
+        />
+      </div>
+      <a href="./screens/custom_page.html"><button class="cta" id="btn">
+        Personnalisez votre Perfecto<span id="btn__span" class="btn__span"></span>
+      </button>
+      </a>
+    </section>
+
+
+    <section class="fabrics" id="fabrics">
+
+      <!---- FABRICS TEXT ---->
+
+      <div class="fabrics__text">
+        <h2>Nos tissus choisis avec soin</h2>
+        <div id="lether__text" class="is-checked">
+          <h3>Cuir d’eucalyptus</h3>
+          <p>
+            Il offre une résistance et une longévité extrême aux produits.
+            L’eucalyptus est une plante durable ne nécessitant pas de grandes
+            quantités d'eau ou d'énergie pour être cultivée.
+          </p>
+        </div>
+        <div id="wool__text" class="fabric__choice">
+          <h3>La laine de chanvre</h3>
+          <p>
+            En plus d’être une matière écologique et locale de choix, c’est
+            aussi la fibre végétale la plus robuste, et thermorégulatrice.
+          </p>
+        </div>
+        <div id="lyocell__text" class="fabric__choice">
+          <h3>Le Lyocell</h3>
+          <p>
+            C’est une fibre synthétique artificielle biodégradable fabriquée à
+            partir de bois d'eucalyptus. Il est également hypoallergénique grace
+            à une filtrations des bactéries et des polluants.
+          </p>
+        </div>
+      </div>
+
+      <!---- FABRICS CHOICE ---->
+
+      <div class="fabrics__container">
+        <div class="fabric__radio fabric__radio__1">
+          <span class="fabric__input1"
+            ><input
+              type="radio"
+              id="lether"
+              name="fabric"
+              value="lether"
+              checked
+          /></span>
+          <img
+            class="fabric__image__lether"
+            src="assets/fabric1.png"
+            alt="lether"
+          />
+        </div>
+
+        <div class="fabric__radio">
+          <span class="fabric__input2"
+            ><input type="radio" id="wool" name="fabric" value="wool"
+          /></span>
+
+          <img
+            class="fabric__image__wool"
+            src="assets/fabric2.png"
+            alt="wool"
+          />
+        </div>
+
+        <div class="fabric__radio">
+          <span class="fabric__input3"
+            ><input
+              type="radio"
+              id="lyocell"
+              name="fabric"
+              value="lyocell"/></span
+          ><img
+            class="fabric__image__lyocell"
+            src="assets/fabric3.png"
+            alt="lyocell"
+          />
+        </div>
+
+        <div class="fabric__radio">
+          <img
+            class="fabric__image__shadow"
+            src="assets/fabric4.png"
+            alt="shadow"
+          />
+        </div>
+        <div class="fabric__background"><p>Tissus</p></div>
+      </div>
+    </section>
+
+
+
+
+    <section class="collection" id="collections">
+      <h2 class="collection__title">Nos Créations</h2>
+      <div class="collection__carrousel">
+        <div class="collection__arrow collection__arrow--left">
+          <img
+            src="assets/arrow-left-circle-line.png"
+            alt="arrow left"
+            class=" collection__arrowImg"
+          />
+        </div>
+        <ul class="collection__imgs">
+          <li class="collection__img collection__img--visible">
+            <img
+              src="assets/collection1.png"
+              alt="man with a perfecto"
+              class="collection__imgli collection__imgli--modifier"
+            />
+          </li>
+          <li class="collection__img">
+            <img
+              src="assets/collection2.png"
+              alt="woman with a perfecto"
+              class="collection__imgli collection__imgli--modifier2"
+            />
+          </li>
+          <li class="collection__img">
+            <img
+              src="assets/collection3.png"
+              alt="woman with a perfecto"
+              class="collection__imgli"
+            />
+          </li>
+        </ul>
+        <div class="collection__arrow collection__arrow--right">
+          <img
+            src="assets/arrow-right-circle-line.png"
+            alt="arrow right"
+            class=" collection__arrowImg"
+          />
+        </div>
+      </div>
+      <a href="#">
+      <button class="cta" id="btn">
+        Choisissez le votre<span id="btn__span" class="btn__span"></span>
+      </button>
+      </a>
+    </section>
+    <section class="artist" id="artist">
+      <div class="artist__text">
+        <h2>Perfected <em>x</em> Murciano</h2>
+        <p>
+          Patrice Murciano est un artiste français autodidacte qui a décidé de
+          dépoussiérer les figures classiques de l’art et de la culture,
+          formelles ou populaires. Son talent navigue donc entre La Joconde et
+          Iron Man dans une explosion de couleurs chatoyantes. Il les emploie
+          pour sublimer les personnages, et leur envoyer le plein d’énergie
+          positive !
+        </p>
+        <a href="http://patricemurciano.com/fr/">
+          <button class="cta" id="btn">
+            Découvrez Murciano<span id="btn__span" class="btn__span"></span>
+          </button>
+        </a>
+      </div>
+      <div class="artist__pictures">
+        <img
+          class="artist__murciano"
+          src="./assets/murciano-portrait.jpg"
+          alt="murciano portrait"
+        />
+        <div class="artist__paintings">
+          <img
+            class="artist__painting"
+            src="./assets/painting-yoga.jpg"
+            alt="yoda"
+          />
+          <img
+            class="artist__painting"
+            src="./assets/painting-joker.jpg"
+            alt="yoda"
+          />
+          <img
+            class="artist__painting"
+            src="./assets/painting-rino.jpg"
+            alt="yoda"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="values" id="values">
+      <h2>NOS VALEURS</h2>
+        <div class="values__value">
+          <img
+            class="values__pic values__pic--left"
+            src="../src/assets/photo-1501087063833-3773ee886f20.jfif"
+            alt=""
+          />
+          <div class="values__colors">
+            <div class="values__color--one"></div>
+            <div class="values__color--two"></div>
+            <div class="values__color--three"></div>
+          </div>
+          <div class="values__content">
+            <h3 class="values__title">Fabrication</h3>
+            <p class="p-card values__description">
+              Perfected s’associe avec un artiste pour une collaboration inédite
+              melant la mode et l’art.
+            </p>
+            <img class="knowMore" src="./assets/add.svg" alt="know more" />
+          </div>
+        </div>
+        <div class="values__value">
+          <div class="values__content">
+            <h3 class="values__title">Transport</h3>
+            <p class="p-card values__description">
+              La livraison de votre Perfecto est assuré par Vert chez vous,
+              spécialistes de la logistique éco-responsable
+            </p>
+            <img class="knowMore" src="./assets/add.svg" alt="know more" />
+          </div>
+          <img
+            class="values__pic values__pic--right"
+            src="../src/assets/green.png"
+            alt=""
+          />
+        </div>
+        <div class="values__value">
+          <img
+            class="values__pic values__pic--left"
+            src="../src/assets/photo-1506634064465-7dab4de896ed.jfif"
+            alt=""
+          />
+          <div class="values__content">
+            <h3 class="values__title">Association</h3>
+            <p class="p-card values__description">
+              Pendant tout le mois de Fevrier, nous sommes mécènes de
+              l’association PLANTONS pour l’avenir qui reboise les forêt
+              française.
+            </p>
+            <img class="knowMore" src="./assets/add.svg" alt="know more" />
+          </div>
+        </div>
+    </section>
+    <footer>
+      <div class="background__footer">
+        <div class="container__txt">
+          <div class="footer__info footer__infos">
+            <ul>
+              <h3>INFOS</h3>
+              <li><p>Mentions Légales</p></li>
+              <li><p>CGV</p></li>
+              <li><p>Histoire de la marque</p></li>
+            </ul>
+          </div>
+          <div class="footer__info footer__services">
+            <ul>
+              <h3>SERVICES</h3>
+              <li><p>Livraison et retours</p></li>
+              <li><p>Sécurisé</p></li>
+              <li><p>Nous contacter</p></li>
+            </ul>
+          </div>
+          <div class="footer__info footer__languages">
+            <ul>
+              <h3>LANGUES</h3>
+              <li><p>Français</p></li>
+              <li><p>Anglais</p></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="icons__apps">
+          <a href="https://www.facebook.com/">
+            <svg class="icon icon-facebook2">
+              <use href="#icon-facebook2"></use>
+              <symbol id="icon-facebook2" viewBox="0 0 32 32">
+                <title>facebook2</title>
+                <path
+                  d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h13v-14h-4v-4h4v-2c0-3.306 2.694-6 6-6h4v4h-4c-1.1 0-2 0.9-2 2v2h6l-1 4h-5v14h9c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3z"
+                ></path>
+              </symbol>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/?hl=fr">
+            <svg class="icon icon-instagram">
+              <use href="#icon-instagram"></use>
+              <symbol id="icon-instagram" viewBox="0 0 32 32">
+                <title>instagram</title>
+                <path
+                  d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"
+                ></path>
+                <path
+                  d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"
+                ></path>
+                <path
+                  d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"
+                ></path>
+              </symbol>
+            </svg>
+          </a>
+        </div>
+
+        <div class="credits">
+          © 2020 - Perfected.
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script type="text/javascript" src="js/script.js"></script>
+</html>

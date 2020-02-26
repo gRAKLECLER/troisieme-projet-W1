@@ -1,0 +1,23 @@
+@mixin desktop {
+  @media (min-width: 1100px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin medium-fabrics {
+  @media (min-width: 500px) {
+    @content;
+  }
+}
+
+@mixin big-phone {
+  @media (min-height: 600px) and (max-width: 767px) {
+    @content;
+  }
+}

@@ -1,0 +1,160 @@
+// VARIABLES COLORS
+
+$background-color: #f3f3f3;
+$brand-background-color: #ececec;
+$primary-color-black: #2f2f2f;
+
+//GLOBALS SETTINGS
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $background-color;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include medium {
+    font-size: 16px;
+  }
+}
+
+p {
+  font-family: $p-font;
+  font-size: 1em;
+  color: $primary-color-black;
+
+  @include medium {
+    font-size: 1rem;
+  }
+}
+
+h1 {
+  font-family: $h1-font;
+  font-size: 1.8rem;
+  color: $primary-color-black;
+  line-height: 100%;
+
+  @include medium {
+    font-size: 2.2rem;
+  }
+
+  @include desktop {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: $h2-font;
+  font-size: 1.45rem;
+  color: $primary-color-black;
+
+  @include medium {
+    font-size: 1.8rem;
+  }
+
+  @include desktop {
+    font-size: 2.2rem;
+  }
+}
+
+h3 {
+  font-family: $h3-font;
+  font-size: 1.1em;
+  color: $primary-color-black;
+
+  @include medium {
+    font-size: 1.4rem;
+  }
+
+  @include desktop {
+    font-size: 1.6em;
+  }
+}
+
+.header__brand {
+  font-family: $brand-font;
+  font-size: 2em;
+
+  @include medium {
+    font-size: 2.2em;
+  }
+}
+
+.cta {
+  background-color: transparent;
+  font-family: $cta-font;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border: 3px solid $primary-color-black;
+  color: $primary-color-black;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  height: 4rem;
+  width: 15rem;
+
+  @include medium {
+    font-size: 1rem;
+    text-align: center;
+    height: 4rem;
+    width: 20rem;
+
+    &:hover {
+      color: $background-color;
+
+      .btn__span {
+        width: 800px;
+        height: 800px;
+      }
+    }
+  }
+
+  .btn__span {
+    border-radius: 50%;
+    background-color: $primary-color-black;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+}
+
+.menu {
+  font-family: $menu-font;
+  font-size: 0.5em;
+  color: $primary-color-black;
+
+  @include medium {
+    font-size: 0.9em;
+  }
+}
+.p-card {
+  font-family: $p-card-font;
+
+  @include medium {
+    font-size: 1rem;
+  }
+
+  @include desktop {
+    font-size: 1.3rem;
+  }
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a:hover {
+  cursor: pointer;
+}

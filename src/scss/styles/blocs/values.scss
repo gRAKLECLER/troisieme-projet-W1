@@ -1,0 +1,167 @@
+.values {
+  padding: 8% 3% 8% 3%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $brand-background-color;
+  z-index: 1;
+
+  @include medium {
+    padding: 0% 3% 0% 3%;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+  }
+
+  h2 {
+    margin-bottom: 8%;
+
+    @include medium {
+      position: absolute;
+      margin-top: -30vh;
+    }
+  }
+  &__value {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+
+    .knowMore {
+      display: none;
+    }
+
+    @include medium {
+      width: 36%;
+      height: 60vh;
+      margin: 0;
+      filter: grayscale(1);
+      align-self: flex-end;
+
+      .knowMore {
+        display: block;
+        height: 60px;
+        padding: 20px;
+        border: 1px solid $background-color;
+        width: 60px;
+        align-self: center;
+      }
+
+      &:hover {
+        position: relative;
+        filter: none;
+
+        .knowMore {
+          opacity: 0;
+        }
+
+        .values__description {
+          opacity: 1;
+          text-shadow: 0 0 5px #000000;
+        }
+      }
+    }
+  }
+
+  &__pic {
+    width: 49%;
+    padding: 10px;
+    height: 100%;
+    object-fit: cover;
+
+    @include medium {
+      width: 100%;
+      margin-left: 0px;
+      position: absolute;
+      z-index: -1;
+    }
+
+    &--left {
+      box-shadow: 5px 0px 8px rgba(0, 0, 0, 0.25);
+
+      @include medium {
+        box-shadow: none;
+      }
+    }
+
+    &--right {
+      box-shadow: -5px 0px 8px rgba(0, 0, 0, 0.25);
+
+      @include medium {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__content {
+    padding: 10px 5% 10px 5%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    @include medium {
+      padding: 10%;
+      position: relative;
+      color: white;
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    font-size: 0.8rem;
+
+    @include medium {
+      color: $background-color;
+      font-size: 24px;
+      text-shadow: 0 0 5px #000000;
+      align-self: center;
+    }
+  }
+
+  &__description {
+    font-size: 0.8em;
+    line-height: 150%;
+
+    @include medium {
+      align-self: center;
+      text-align: center;
+      font-size: 1.5em;
+      color: $background-color;
+      z-index: 0;
+      opacity: 0;
+    }
+  }
+
+  @include medium {
+    &__colors {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      display: flex;
+      opacity: 0.3;
+      z-index: 1;
+
+      &:hover {
+        .values__color--one {
+          width: 33.3%;
+          background-color: darkblue;
+        }
+        .values__color--two {
+          width: 33.3%;
+          background-color: white;
+        }
+        .values__color--three {
+          width: 33.3%;
+          background-color: red;
+        }
+      }
+    }
+  }
+}

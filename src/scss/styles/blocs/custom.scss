@@ -1,0 +1,35 @@
+.custom {
+  padding: 30px 0 30px 0;
+  background-color: #c4c4c4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    padding-bottom: 5%;
+  }
+  div {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    width: 100%;
+
+    img {
+      max-width: 100%;
+      padding-bottom: 5%;
+
+      @include medium {
+        max-width: 50%;
+      }
+    }
+
+    .jacket__man {
+      display: none;
+
+      @include medium {
+        display: block;
+      }
+    }
+  }
+}
